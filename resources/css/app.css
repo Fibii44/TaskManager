@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Removes the blue outline from the actual text input inside the search bar */
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Specifically targets Material UI's internal input element */
+.MuiInputBase-input:focus {
+    outline: none !important;
+}
+
+/* Removes any focus rings that browsers apply to clickable areas */
+[role="button"]:focus,
+button:focus {
+    outline: none !important;
+}
